@@ -1,0 +1,141 @@
+C:\Users\Nugg\Python37\python.exe D:/Nugg/CloudStation/Coding/Python/openai_gym/solved/CartPole-xcs-rc.py
+Episode #1 finished after 10 timesteps
+Episode #2 finished after 9 timesteps
+Episode #3 finished after 200 timesteps
+Episode #4 finished after 200 timesteps
+Episode #5 finished after 200 timesteps
+Episode #6 finished after 200 timesteps
+Episode #7 finished after 200 timesteps
+Episode #8 finished after 200 timesteps
+Episode #9 finished after 200 timesteps
+Episode #10 finished after 39 timesteps
+Episode #11 finished after 200 timesteps
+Episode #12 finished after 66 timesteps
+Episode #13 finished after 200 timesteps
+Episode #14 finished after 200 timesteps
+Episode #15 finished after 200 timesteps
+Episode #16 finished after 200 timesteps
+Episode #17 finished after 200 timesteps
+Episode #18 finished after 90 timesteps
+Episode #19 finished after 200 timesteps
+Episode #20 finished after 200 timesteps
+Episode #21 finished after 200 timesteps
+Episode #22 finished after 200 timesteps
+Episode #23 finished after 200 timesteps
+Episode #24 finished after 200 timesteps
+Episode #25 finished after 200 timesteps
+Episode #26 finished after 200 timesteps
+Episode #27 finished after 190 timesteps
+Episode #28 finished after 200 timesteps
+Episode #29 finished after 200 timesteps
+Episode #30 finished after 168 timesteps
+Episode #31 finished after 200 timesteps
+Episode #32 finished after 200 timesteps
+Episode #33 finished after 200 timesteps
+Episode #34 finished after 200 timesteps
+Episode #35 finished after 200 timesteps
+Episode #36 finished after 200 timesteps
+Episode #37 finished after 200 timesteps
+Episode #38 finished after 200 timesteps
+Learning stopped.
+Episode #39 finished after 200 timesteps
+Episode #40 finished after 200 timesteps
+Episode #41 finished after 200 timesteps
+Episode #42 finished after 200 timesteps
+Episode #43 finished after 200 timesteps
+Episode #44 finished after 200 timesteps
+Episode #45 finished after 200 timesteps
+Episode #46 finished after 200 timesteps
+Episode #47 finished after 200 timesteps
+Episode #48 finished after 200 timesteps
+Episode #49 finished after 200 timesteps
+Episode #50 finished after 200 timesteps
+Episode #51 finished after 200 timesteps
+Episode #52 finished after 200 timesteps
+Episode #53 finished after 200 timesteps
+Episode #54 finished after 200 timesteps
+Episode #55 finished after 200 timesteps
+Episode #56 finished after 200 timesteps
+Episode #57 finished after 200 timesteps
+Episode #58 finished after 200 timesteps
+Episode #59 finished after 200 timesteps
+Episode #60 finished after 200 timesteps
+Episode #61 finished after 200 timesteps
+Episode #62 finished after 200 timesteps
+Episode #63 finished after 200 timesteps
+Episode #64 finished after 200 timesteps
+Episode #65 finished after 200 timesteps
+Episode #66 finished after 200 timesteps
+Episode #67 finished after 200 timesteps
+Episode #68 finished after 200 timesteps
+Episode #69 finished after 200 timesteps
+Episode #70 finished after 200 timesteps
+Episode #71 finished after 200 timesteps
+Episode #72 finished after 200 timesteps
+Episode #73 finished after 200 timesteps
+Episode #74 finished after 200 timesteps
+Episode #75 finished after 200 timesteps
+Episode #76 finished after 200 timesteps
+Episode #77 finished after 200 timesteps
+Episode #78 finished after 200 timesteps
+Episode #79 finished after 200 timesteps
+Episode #80 finished after 200 timesteps
+Episode #81 finished after 200 timesteps
+Episode #82 finished after 200 timesteps
+Episode #83 finished after 200 timesteps
+Episode #84 finished after 200 timesteps
+Episode #85 finished after 200 timesteps
+Episode #86 finished after 200 timesteps
+Episode #87 finished after 200 timesteps
+Episode #88 finished after 200 timesteps
+Episode #89 finished after 200 timesteps
+Episode #90 finished after 200 timesteps
+Episode #91 finished after 200 timesteps
+Episode #92 finished after 200 timesteps
+Episode #93 finished after 200 timesteps
+Episode #94 finished after 200 timesteps
+Episode #95 finished after 200 timesteps
+Episode #96 finished after 200 timesteps
+Episode #97 finished after 200 timesteps
+Episode #98 finished after 200 timesteps
+Episode #99 finished after 200 timesteps
+Episode #100 finished after 200 timesteps
+Episode #101 finished after 200 timesteps
+Episode #102 finished after 200 timesteps
+.
+
+Final Population
+id;cond;;act;pred;fit;prederr;num;exp;actsetsize
+1;[-1.757, 0.543];[-0.002, 0.208];1;91.479;1.000;13.877;84;2548;1
+2;[-0.256, 1.574];[-0.189, -0.003];0;84.372;1.000;8.748;37;1983;1
+3;[-0.989, -0.265];[-0.184, -0.014];0;92.404;1.000;9.624;24;747;1
+4;[0.546, 1.515];[0.017, 0.193];1;68.013;1.000;34.811;45;579;1
+5;[0.532, 1.292];[-0.003, 0.085];0;77.209;0.539;33.418;62;437;1
+6;[0.567, 1.562];[-0.003, 0.023];0;97.390;0.920;9.113;12;202;1
+7;[-1.724, 0.015];[-0.018, -0.003];1;98.588;1.000;6.031;13;195;1
+8;[-1.569, -0.995];[-0.121, -0.035];0;99.549;1.000;1.828;8;54;1
+9;[-1.751, -0.734];[-0.031, -0.019];1;55.592;1.000;34.915;11;45;1
+10;[-2.545, 1.708];[0.086, 0.209];0;0.000;1.007;0.024;32;32;1
+11;[-1.598, 0.543];[-0.003, 0.183];0;12.000;1.104;0.267;20;20;1
+12;[1.354, 1.569];[0.009, 0.028];0;100.000;1.253;0.859;5;16;1
+13;[-0.542, -0.350];[-0.110, -0.018];1;15.714;1.396;0.920;14;14;1
+14;[0.039, 0.492];[-0.024, -0.002];1;23.495;1.396;3.243;6;14;1
+15;[-1.763, -0.990];[-0.035, -0.014];0;20.000;1.396;0.805;14;14;1
+16;[-2.154, -0.268];[-0.013, 0.070];0;16.364;1.773;1.764;11;11;1
+17;[0.545, 1.734];[-0.183, 0.016];1;10.000;1.966;2.621;10;10;1
+18;[0.735, 1.304];[0.024, 0.079];0;17.778;2.208;2.640;9;9;1
+19;[1.308, 1.512];[0.029, 0.078];0;17.500;2.510;3.328;8;8;1
+20;[1.522, 1.569];[0.016, 0.030];0;100.000;4.686;12.500;3;4;1
+21;[1.532, 1.544];[0.063, 0.075];0;20.000;4.686;7.500;4;4;1
+22;[-0.263];[-0.015];0;20.000;8.200;30.000;1;1;1
+23;[-0.134];[-0.003];1;20.000;8.200;30.000;1;1;1
+24;[-1.315, -0.990];[-0.033, -0.032];1;20.000;4.686;7.500;4;4;1
+25;[-0.799];[-0.003];1;50.000;10.000;0.000;1;0;1
+26;[-0.159];[-0.003];1;50.000;10.000;0.000;1;0;1
+27;[-0.209];[-0.003];1;50.000;10.000;0.000;1;0;1
+28;[-0.168];[-0.003];1;50.000;10.000;0.000;1;0;1
+29;[-0.179];[-0.003];1;50.000;10.000;0.000;1;0;1
+30;[-0.762];[-0.002];1;50.000;10.000;0.000;1;0;1
+Average last 100 episodes: 195.53
+
+Process finished with exit code 0
