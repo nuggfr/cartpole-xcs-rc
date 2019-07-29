@@ -16,7 +16,7 @@ import xcs_rc
 import gym
 
 agent = xcs_rc.Agent(maxpopsize=100, tcomb=10, predtol=20.0, prederrtol=0.0)
-agent.explore_it = 0.7
+agent.reward_map(max=100.0, init=70.0)
 env = gym.make('CartPole-v0')
 stop_learning = False
 scores = []
