@@ -1,6 +1,7 @@
 # My files
 *.csv
 CartPole-xcs-rc_backup.py
+cartpole.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
