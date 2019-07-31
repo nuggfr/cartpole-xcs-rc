@@ -3,7 +3,7 @@ import gym
 from time import sleep
 
 agent = xcs_rc.Agent(maxpopsize=100, tcomb=20, predtol=20.0, prederrtol=0.0)
-agent.reward_map(max=100.0, init=70.0)
+agent.reward_map(max=100.0, projected=70.0)
 env = gym.make('CartPole-v0')
 stop_learning = False
 scores = []
@@ -41,7 +41,7 @@ for i_episode in range(200):
 
             save_mode = 'w' if i_episode == 0 else 'a'
             title = "Episode: " + str(i_episode + 1)
-            agent.save_popfile("cartpole.csv", title, save_mode)
+            agent.pop.save("cartpole.csv", title, save_mode)
             break
 
     if len(scores) >= 20 and not stop_learning:

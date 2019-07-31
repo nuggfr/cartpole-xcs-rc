@@ -2,8 +2,8 @@ import xcs_rc
 import gym
 
 agent = xcs_rc.Agent()
-agent.reward_map(max=100.0, init=70.0)
-agent.insert_to_pop("cartpole.csv")
+agent.reward_map(max=100.0, projected=70.0)
+agent.pop.load("cartpole_solved.csv")
 env = gym.make('CartPole-v0')
 scores = []
 
