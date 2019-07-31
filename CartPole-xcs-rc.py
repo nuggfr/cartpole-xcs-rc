@@ -3,7 +3,7 @@ import gym
 from time import sleep
 
 agent = xcs_rc.Agent(maxpopsize=100, tcomb=20, predtol=20.0, prederrtol=0.0)
-agent.reward_map(max=100.0, projected=70.0)
+agent.reward_map(max=100.0, projected=80.0)
 env = gym.make('CartPole-v0')
 stop_learning = False
 scores = []
@@ -56,8 +56,8 @@ for i_episode in range(200):
         if float(sum(check_solved) / 100) >= 195.0:
             break
 
-agent.combine_pop()
-agent.print_pop("\nFinal Population")
-agent.save_popfile("cartpole.csv", 'Final', 'a')
+agent.pop.combine()
+agent.pop.print("\nFinal Population")
+agent.pop.save("cartpole.csv", 'Final', 'a')
 print("Average last 100 episodes:", float(sum(scores) / 100))
 env.close()

@@ -15,8 +15,8 @@ A fully classical Reinforcement Learning solution for CartPole environment from 
 import xcs_rc
 import gym
 
-agent = xcs_rc.Agent(maxpopsize=100, tcomb=10, predtol=20.0, prederrtol=0.0)
-agent.reward_map(max=100.0, init=70.0)
+agent = xcs_rc.Agent(maxpopsize=100, tcomb=20, predtol=20.0, prederrtol=0.0)
+agent.reward_map(max=100.0, projected=80.0)
 env = gym.make('CartPole-v0')
 stop_learning = False
 scores = []
@@ -43,7 +43,7 @@ for i_episode in range(50):
     for t in range(200):
         env.render()
 
-        action = agent.next_action(input, 2, 1 - i_episode)
+        action = agent.next_action(input, 1, 1 - i_episode)
 ```
 
 **Get `env` Response and Assign `my_reward`**
@@ -67,7 +67,7 @@ for i_episode in range(50):
 ```
             save_mode = 'w' if i_episode == 0 else 'a'
             title = "Episode: " + str(i_episode + 1)
-            agent.save_popfile("cartpole.csv", title, save_mode)
+            agent.pop.save("cartpole.csv", title, save_mode)
             break
 ```
   
@@ -91,9 +91,9 @@ for i_episode in range(50):
 
 **Final Report and Close**
 ```
-agent.combine_pop()
-agent.print_pop("\nFinal Population")
-agent.save_popfile("cartpole.csv", 'Final', 'a')
+agent.pop.combine()
+agent.pop.print("\nFinal Population")
+agent.pop.save("cartpole.csv", 'Final', 'a')
 print("Average last 100 episodes:", float(sum(scores) / 100))
 env.close()
 ```
