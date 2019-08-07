@@ -2,8 +2,8 @@ import xcs_rc
 import gym
 from time import sleep
 
-agent = xcs_rc.Agent(maxpopsize=100, tcomb=20, predtol=20.0, prederrtol=0.0)
-agent.reward_map(max=100.0, projected=80.0)
+agent = xcs_rc.Agent(tcomb=20, prederrtol=0.0)
+agent.reward_map(max=1000.0, projected=800.0)
 env = gym.make('CartPole-v0')
 stop_learning = False
 scores = []
@@ -26,7 +26,7 @@ for i_episode in range(200):
     for t in range(200):
         env.render()
 
-        action = agent.next_action(input, 1, 1 - i_episode)
+        action = agent.next_action(input, 2, 1 - i_episode)
 
         state, reward, done, info = env.step(action)
         input = [state[1], state[2]]
@@ -41,7 +41,7 @@ for i_episode in range(200):
 
             save_mode = 'w' if i_episode == 0 else 'a'
             title = "Episode: " + str(i_episode + 1)
-            agent.pop.save("cartpole.csv", title, save_mode)
+            agent.save("cartpole.csv", title, save_mode)
             break
 
     if len(scores) >= 20 and not stop_learning:
@@ -49,7 +49,7 @@ for i_episode in range(200):
         if float(sum(check_stop) / 20) >= 195.0:
             print("Learning stopped.")
             stop_learning = True
-            sleep(10)
+            sleep(10)  # small pause for recording preparation! :)
 
     if len(scores) >= 100:
         check_solved = scores[-100:]
@@ -58,6 +58,6 @@ for i_episode in range(200):
 
 agent.pop.combine()
 agent.pop.print("\nFinal Population")
-agent.pop.save("cartpole.csv", 'Final', 'a')
+agent.save("cartpole.csv", 'Final', 'a')
 print("Average last 100 episodes:", float(sum(scores) / 100))
 env.close()
