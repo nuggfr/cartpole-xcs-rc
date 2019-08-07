@@ -25,15 +25,14 @@ for i_episode in range(200):
     input = [state[1], state[2]]
     for t in range(200):
         env.render()
-
         action = agent.next_action(input, 2, 1 - i_episode)
 
-        state, reward, done, info = env.step(action)
+        state, feedback, done, info = env.step(action)
         input = [state[1], state[2]]
 
         if not stop_learning:
-            my_reward = agent.maxreward * get_reward(input, action)
-            agent.apply_reward(my_reward)
+            reward = agent.maxreward * get_reward(input, action)
+            agent.apply_reward(reward)
 
         if done:
             print("Episode #{} finished after {} timesteps".format(i_episode + 1, t + 1))
